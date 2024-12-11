@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonarVida", "DonarVida\DonarVida.csproj", "{70C755C5-3D64-4667-A1A5-D5237F6ED09B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDonarVida", "ClassDonarVida\ClassDonarVida.csproj", "{0AB74419-C4ED-417F-A738-00EB280A8B7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70C755C5-3D64-4667-A1A5-D5237F6ED09B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C755C5-3D64-4667-A1A5-D5237F6ED09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C755C5-3D64-4667-A1A5-D5237F6ED09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C755C5-3D64-4667-A1A5-D5237F6ED09B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB74419-C4ED-417F-A738-00EB280A8B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB74419-C4ED-417F-A738-00EB280A8B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB74419-C4ED-417F-A738-00EB280A8B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB74419-C4ED-417F-A738-00EB280A8B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8F8CAEC-954F-4F9F-BC14-1D8862DE4611}
+	EndGlobalSection
+EndGlobal

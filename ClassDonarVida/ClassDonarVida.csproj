@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<!-- o la versión de .NET que utilices -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Natanael Sasia</Authors>
+		<Company>*****</Company>
+		<PackageId>DonarVidaNuget</PackageId>
+		<!-- Nombre único para el paquete -->
+		<Version>2.1.0</Version>
+		<!-- Versión de tu paquete -->
+		<Description>Servicios e interfaces de api para centros de donacion de sangres</Description>
+		<PackageTags>blazor;utils;otros</PackageTags>
+		<!-- Etiquetas del paquete -->
+		<RepositoryUrl>https://github.com/Nata1889</RepositoryUrl>
+		<!-- Opcional -->
+	</PropertyGroup>
+
+</Project>
