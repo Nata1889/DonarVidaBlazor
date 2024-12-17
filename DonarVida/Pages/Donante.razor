@@ -147,6 +147,7 @@ else
         isModalVisible = true;
     }
 
+
     private async Task EditarDonante(int id)
     {
         donanteActual = await DonanteService.GetByIdAsync(id);
@@ -198,6 +199,7 @@ else
                     // Actualizar la lista local después de la eliminación.
                     // donantes = donantes!.Where(d => d.Id != id).ToList();
                     await Swal.FireAsync("Éxito", "Donante eliminado correctamente.", SweetAlertIcon.Success);
+                    CargarDonantes();
                 }
                 else
                 {

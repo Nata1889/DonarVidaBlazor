@@ -180,6 +180,7 @@ else
                     await Swal.FireAsync("Error", "No se pudo eliminar el Centro.", SweetAlertIcon.Error);
                 }
             }
+            CargarCentros();
         }
         catch (Exception ex)
         {

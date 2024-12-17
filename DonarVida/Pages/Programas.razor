@@ -152,7 +152,11 @@ else
 
     private void NuevoPrograma()
     {
-        programaActual = new ClassDonarVida.Models.ProgramaDonacion();
+        programaActual = new ClassDonarVida.Models.ProgramaDonacion
+        {
+                FechaInicio = DateOnly.FromDateTime(DateTime.Now),
+                FechaFin = DateOnly.FromDateTime(DateTime.Now.AddDays(15))
+        };
         modalTitle = "Nueva Campaña de Donación";
         isModalVisible = true;
     }
@@ -207,6 +211,7 @@ else
                 {
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Campaña eliminada correctamente.", SweetAlertIcon.Success);
+                    CargarProgramas();
                 }
                 else
                 {
