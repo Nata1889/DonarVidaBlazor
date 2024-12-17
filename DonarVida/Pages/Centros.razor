@@ -172,6 +172,7 @@ else
                 var resultado = await CentroDonacionService.DeleteAsync(id);
                 if (resultado)
                 {
+                    centros = centros!.Where(d => d.Id != id).ToList();
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Centro eliminado correctamente.", SweetAlertIcon.Success);
                     var centrosList = await CentroDonacionService.GetAllAsync();

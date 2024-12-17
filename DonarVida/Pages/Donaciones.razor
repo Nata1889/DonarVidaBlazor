@@ -225,6 +225,7 @@ else
                 var resultado = await DonacionService.DeleteAsync(id);
                 if (resultado)
                 {
+                    donaciones = donaciones!.Where(d => d.Id != id).ToList();
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Donación eliminada correctamente.", SweetAlertIcon.Success);
                 }

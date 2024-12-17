@@ -209,6 +209,7 @@ else
                 var resultado = await ProgramaDonacionService.DeleteAsync(id);
                 if (resultado)
                 {
+                    programas = programas!.Where(d => d.Id != id).ToList();
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Campaña eliminada correctamente.", SweetAlertIcon.Success);
                 }
