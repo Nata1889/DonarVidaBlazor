@@ -199,11 +199,11 @@ else
                     // Actualizar la lista local después de la eliminación.
                     // donantes = donantes!.Where(d => d.Id != id).ToList();
                     await Swal.FireAsync("Éxito", "Donante eliminado correctamente.", SweetAlertIcon.Success);
-                    CargarDonantes();
                 }
                 else
                 {
                     await Swal.FireAsync("Error", "No se pudo eliminar el donante.", SweetAlertIcon.Error);
+                    StateHasChanged();
                 }
             }
         }

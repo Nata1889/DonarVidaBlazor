@@ -227,11 +227,11 @@ else
                 {
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Donación eliminada correctamente.", SweetAlertIcon.Success);
-                    CargarDonaciones();
                 }
                 else
                 {
                     await Swal.FireAsync("Error", "No se pudo eliminar la donación.", SweetAlertIcon.Error);
+                    StateHasChanged();
                 }
             }
         }

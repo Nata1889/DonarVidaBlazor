@@ -211,11 +211,11 @@ else
                 {
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Campaña eliminada correctamente.", SweetAlertIcon.Success);
-                    CargarProgramas();
                 }
                 else
                 {
                     await Swal.FireAsync("Error", "No se pudo eliminar la Campaña.", SweetAlertIcon.Error);
+                    StateHasChanged();
                 }
             }
         }

@@ -174,13 +174,14 @@ else
                 {
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Centro eliminado correctamente.", SweetAlertIcon.Success);
+
+                    StateHasChanged();
                 }
                 else
                 {
                     await Swal.FireAsync("Error", "No se pudo eliminar el Centro.", SweetAlertIcon.Error);
                 }
             }
-            CargarCentros();
         }
         catch (Exception ex)
         {
