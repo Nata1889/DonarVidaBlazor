@@ -172,7 +172,10 @@ else
 
     private void NuevaDonacion()
     {
-        donacionActual = new ClassDonarVida.Models.Donacion();
+        donacionActual = new ClassDonarVida.Models.Donacion
+        {
+                FechaDonacion = DateOnly.FromDateTime(DateTime.Now)
+        };
         modalTitle = "Nueva donación";
         isModalVisible = true;
     }
