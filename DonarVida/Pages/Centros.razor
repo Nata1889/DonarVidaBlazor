@@ -174,7 +174,7 @@ else
                 {
                     // Actualizar la lista local después de la eliminación.
                     await Swal.FireAsync("Éxito", "Centro eliminado correctamente.", SweetAlertIcon.Success);
-
+                    var centrosList = await CentroDonacionService.GetAllAsync();
                     StateHasChanged();
                 }
                 else

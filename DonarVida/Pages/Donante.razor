@@ -203,6 +203,7 @@ else
                 else
                 {
                     await Swal.FireAsync("Error", "No se pudo eliminar el donante.", SweetAlertIcon.Error);
+                    var donantesList = await DonanteService.GetAllAsync();
                     StateHasChanged();
                 }
             }

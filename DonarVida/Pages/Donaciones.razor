@@ -231,6 +231,7 @@ else
                 else
                 {
                     await Swal.FireAsync("Error", "No se pudo eliminar la donación.", SweetAlertIcon.Error);
+                    var donacionesList = await DonacionService.GetAllAsync();
                     StateHasChanged();
                 }
             }
