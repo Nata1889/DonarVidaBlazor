@@ -31,7 +31,7 @@ else
                 <th>Nombre</th>
                 <th>Fecha de Donación</th>
                 <th>Tipo de Donación</th>
-                <th>Programa de Donación</th>
+                <th>Campaña de Donación</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -81,7 +81,7 @@ else
                         <input type="text" id="TipoDonacion" class="form-control" @bind="donacionActual.TipoDonacion" />
                     </div>
                     <div class="mb-3">
-                        <label for="ProgramaDonacion" class="form-label">Programa de donación</label>
+                        <label for="ProgramaDonacion" class="form-label">Campaña de donación</label>
                         <select type="text" id="ProgramaDonacion" class="form-select" @bind="donacionActual.ProgramaDonacionId">
                             @foreach (var programa in programaDonacion)
                             {
